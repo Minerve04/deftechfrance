@@ -8,13 +8,14 @@
   <url><loc>https://deftechfrance.fr/secteur/missiles-munitions.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/protection-nrbc.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/energie-materiaux.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://deftechfrance.fr/secteur/aeronautique-aerostructures.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/secteur/sous-traitance-industrielle-mecanique.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/optronique-photonique.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/electronique-composants.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/communications-rf.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/drones-robotique.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/renseignement-ia.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/spatial-satellites.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/secteur/aeronautique-aerostructures.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/naval-sous-marin.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/ingenierie-mco.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/secteur/cybersecurite.html</loc><changefreq>weekly</changefreq></url>
@@ -290,4 +291,142 @@
   <url><loc>https://deftechfrance.fr/entreprise/expleo.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/entreprise/segula-technologies.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://deftechfrance.fr/entreprise/akkodis.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/heli-union.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cnn-mco.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/efinor.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/actia.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/emka-electronique.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/selva-electronique.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/axis-electronique.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cimulec.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mecapole.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/armor-meca.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/dixi-microtechniques.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/isp-system.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/issoire-aviation.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/stts-group.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/hef-groupe.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/spherea.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/top-industrie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/emc-france.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/kopp-france.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/nbc-sys.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/pegase-energies.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/ev-teknology.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/agueris.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/st-engineering-antycip.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/masa-group.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/oktal-se.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/immersion.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/gaussin.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/be-esvres-matricage.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/fonderie-barbas-et-plailly.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/fonderie-de-l-ouanne.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lajoinie-fonderie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/fonderie-de-la-varenne.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/avignon-ceramic.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/biezanek-noyautage.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/colin-milas.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/catoire-semi.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/gamma-tial-technologie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cetil.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cirmeca.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/coaero.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/gerard-pineau.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/jacques-soudure.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/etablissements-glaude.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/g2-meca-concept.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/colin-industries.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/biemon-repoussage.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/abg-concept.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/aeromax.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/antares-france.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/atelier-de-mecanique-jean-lasserre.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/atelier-de-realisations-mecaniques.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/aurema.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/berthelot.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/calibracier.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/chabris-meca-perro-meca.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/conorm.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/coufal.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/decolletage-du-berry.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/decolletage-jacques-coeur.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/decolletage-automatique-meunier-freres.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/etablissements-darde.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/etablissements-garnier-durand.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/gattefin.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lgb.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lhuillery-et-beulet.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mcsa.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/meca-decolletage-gerbier.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/meca-precis.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mecabess.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mecanique-de-sologne.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mecazoil.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mecanique-de-precision-de-l-orleanais.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/numecap.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/poirier-erosion.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/dorion.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/ateliers-poly-meca.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/brenot.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/ets-neveu.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/ets-yvon-boyer.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/eure-et-loir-industries.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lesaffre.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/septem.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/ampi.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/axyllus-technologies.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/blois-atelier-mecanique.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/atelier-de-mecanique-vernouillet.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/flh-veloci-industries.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/delta-metal.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/j-lanfranco-et-cie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/decomatic.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/attax.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/etablissements-caillau.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/ressorts-lacroix.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/etablissements-thyreau.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lachant-spring-28.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/sefard.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/bmg-securits.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/haeraux-technologies.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/giloxal.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/coat-in-technology.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/chimicolor.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lamre.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/msb-industries.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/lejeune.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/sectronic.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/bice.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/france-bobinage.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/noemau.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/sreem.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mifa-electronique.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/efjm.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/imperator-industries.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/hydraustar.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/dubuis-et-compagnie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/europe-caoutchouc.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/serep.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cogit-composites.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/air-fly-systems.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/gt-composites.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/prc-composites.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/sc-aero.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/orcaplast.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/dorier-plast.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/applications-techniques-des-plastiques.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/atemip.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/fluor-one.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/etablissements-appaoo.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/mercier-engrenages.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cerclet-huet.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/actimesure.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/aremeca.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/af-chasset.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/cartoflex.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/hebco-industrie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/berry-radiateurs.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/jacottet-industrie.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://deftechfrance.fr/entreprise/alliances-ceramiques.html</loc><changefreq>weekly</changefreq></url>
 </urlset>
