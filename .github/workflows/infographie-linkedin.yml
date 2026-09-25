@@ -1,0 +1,125 @@
+name: Infographie LinkedIn Deftech
+
+# Publie l'infographie du jour (mardi et jeudi, 8 h 30 heure de Paris l'été / 7 h 30 l'hiver).
+# Fichiers attendus : infographies/a-publier/AAAA-MM-JJ-nXX.html + .json (titre, post, alt)
+# Secrets requis : MAKE_HOOK_URL, INFOG_TOKEN
+on:
+  schedule:
+    - cron: "30 6 * * 2,4"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date à publier AAAA-MM-JJ (vide = aujourd'hui)"
+        required: false
+        default: ""
+      dry_run:
+        description: "true = rendu seul, sans commit ni publication"
+        required: false
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: infographie-linkedin
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Trouver l'infographie du jour
+        id: find
+        run: |
+          D="${{ github.event.inputs.date }}"
+          if [ -z "$D" ]; then D=$(TZ=Europe/Paris date +%F); fi
+          F=$(ls infographies/a-publier/${D}-*.html 2>/dev/null | head -1 || true)
+          if [ -z "$F" ]; then
+            echo "Aucune infographie programmée pour $D"
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          S=$(basename "$F" .html)
+          test -f "infographies/a-publier/$S.json" || { echo "JSON manquant pour $S"; exit 1; }
+          echo "slug=$S" >> "$GITHUB_OUTPUT"
+          echo "found=true" >> "$GITHUB_OUTPUT"
+
+      - name: Installer Chromium
+        if: steps.find.outputs.found == 'true'
+        run: |
+          pip install --quiet playwright==1.47.0
+          python -m playwright install --with-deps chromium
+
+      - name: Rendre le PNG (1080x1350 @2x) et contrôler la mise en page
+        if: steps.find.outputs.found == 'true'
+        env:
+          SLUG: ${{ steps.find.outputs.slug }}
+        run: |
+          mkdir -p infographies/publiees
+          cat > /tmp/render.py <<'PY'
+          import asyncio, os, sys
+          from playwright.async_api import async_playwright
+          slug = os.environ["SLUG"]
+          async def main():
+              async with async_playwright() as p:
+                  b = await p.chromium.launch()
+                  pg = await b.new_page(viewport={"width": 1080, "height": 1350}, device_scale_factor=2)
+                  await pg.goto("file://" + os.path.abspath(f"infographies/a-publier/{slug}.html"), wait_until="networkidle")
+                  await pg.evaluate("document.fonts.ready")
+                  await pg.wait_for_timeout(800)
+                  fam = await pg.evaluate("document.fonts.check('800 60px Archivo')")
+                  h = await pg.evaluate("document.body.scrollHeight")
+                  w = await pg.evaluate("document.body.scrollWidth")
+                  print("police Archivo chargée:", fam, "| dimensions:", w, "x", h)
+                  if not fam:
+                      sys.exit("Police Archivo non chargée : publication annulée")
+                  if h > 1352 or w > 1082:
+                      sys.exit(f"Débordement ({w}x{h}) : publication annulée")
+                  await pg.screenshot(path=f"infographies/publiees/{slug}.png", clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
+                  await b.close()
+          asyncio.run(main())
+          PY
+          python /tmp/render.py
+
+      - name: Aperçu (artefact du run)
+        if: steps.find.outputs.found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.find.outputs.slug }}
+          path: infographies/publiees/${{ steps.find.outputs.slug }}.png
+
+      - name: Archiver et pousser
+        id: commit
+        if: steps.find.outputs.found == 'true' && github.event.inputs.dry_run != 'true'
+        env:
+          SLUG: ${{ steps.find.outputs.slug }}
+        run: |
+          git config user.name "deftech-bot"
+          git config user.email "thomas@minerve.ai"
+          git mv "infographies/a-publier/$SLUG.html" "infographies/publiees/$SLUG.html"
+          git mv "infographies/a-publier/$SLUG.json" "infographies/publiees/$SLUG.json"
+          git add "infographies/publiees/$SLUG.png"
+          git commit -m "Infographie publiée : $SLUG"
+          git push
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Publier sur LinkedIn (webhook Make)
+        if: steps.find.outputs.found == 'true' && github.event.inputs.dry_run != 'true'
+        env:
+          SLUG: ${{ steps.find.outputs.slug }}
+          SHA: ${{ steps.commit.outputs.sha }}
+          MAKE_HOOK_URL: ${{ secrets.MAKE_HOOK_URL }}
+          INFOG_TOKEN: ${{ secrets.INFOG_TOKEN }}
+        run: |
+          URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SHA}/infographies/publiees/${SLUG}.png"
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$URL"); [ "$code" = "200" ] && break; sleep 10
+          done
+          jq -n --arg token "$INFOG_TOKEN" --arg image_url "$URL" \
+                --slurpfile m "infographies/publiees/$SLUG.json" \
+                '{token:$token, image_url:$image_url, titre:$m[0].titre, post:$m[0].post, alt:$m[0].alt}' > /tmp/payload.json
+          curl -sS -f -X POST -H "Content-Type: application/json" --data @/tmp/payload.json "$MAKE_HOOK_URL"
+          echo "Envoyé à Make : $URL"
