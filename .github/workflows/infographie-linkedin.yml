@@ -47,6 +47,10 @@ jobs:
           echo "slug=$S" >> "$GITHUB_OUTPUT"
           echo "found=true" >> "$GITHUB_OUTPUT"
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Installer Chromium
         if: steps.find.outputs.found == 'true'
         run: |
